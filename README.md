@@ -28,4 +28,9 @@
    4. Create repo on github
    5. connect local repo to github repo
    6. push changes to github
-5. 
+5. Create Rating and Product Component
+   1. create components/Rating.js
+   2. create div.rating
+   3. style div.rating, span and last span
+   4. Create Product component
+   5. Use Rating component

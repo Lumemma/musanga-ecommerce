@@ -11,7 +11,7 @@ const data = {
             category: "dresses",
             brand: "H&M",
             rating: "4.0",
-            numReview: "10"
+            numReviews: "10"
 
         },
         {
@@ -25,7 +25,7 @@ const data = {
             category: "dresses",
             brand: "C&A",
             rating: "4.5",
-            numReview: "10"
+            numReviews: "10"
         },
         {
             _id: "dress3",
@@ -38,7 +38,7 @@ const data = {
             category: "dresses",
             brand: "HEMA",
             rating: "4.5",
-            numReview: "15",
+            numReviews: "15",
             
         },
         {
@@ -52,7 +52,7 @@ const data = {
             category: "dresses",
             brand: "Mamaloes",
             rating: "4.0",
-            numReview: "17",
+            numReviews: "17",
         },
         {
             _id: "dress5",
@@ -65,7 +65,7 @@ const data = {
             category: "dresses",
             brand: "Carter's",
             rating: "4.0",
-            numReview: "17",
+            numReviews: "17",
             
         },
         {
@@ -79,7 +79,7 @@ const data = {
             category: "dresses",
             brand: "Cat & Jack",
             rating: "4.8",
-            numReview: "16",
+            numReviews: "16",
             
         },
         {
@@ -93,7 +93,7 @@ const data = {
             category: "dresses",
             brand: "Burt's bees baby",
             rating: "4.0",
-            numReview: "10",
+            numReviews: "10",
            
         },
         {
@@ -107,7 +107,7 @@ const data = {
             category: "dresses",
             brand: "Bees baby",
             rating: "4.5",
-            numReview: "18",
+            numReviews: "18",
             
         },
         {
@@ -121,7 +121,7 @@ const data = {
             category: "dresses",
             brand: "Babydump baby",
             rating: "4.0",
-            numReview: "17",
+            numReviews: "17",
             
         },
         {
@@ -135,7 +135,7 @@ const data = {
             category: "dresses",
             brand: "C&A",
             rating: "4.5",
-            numReview: "15",
+            numReviews: "15",
             
         },
         {
@@ -149,7 +149,7 @@ const data = {
             category: "dresses",
             brand: "H&M",
             rating: "4.8",
-            numReview: "18",
+            numReviews: "18",
             
         }
     ]
