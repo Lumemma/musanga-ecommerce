@@ -11,12 +11,13 @@ const data = {
             category: "dresses",
             brand: "H&M",
             rating: "4.0",
-            numReviews: "10"
+            numReviews: "10",
+            countInStock: "30"
 
         },
         {
             _id: "dress2",
-            name: "C&A baby cothing",
+            name: "C&A children cothing",
             image: "/images/dress2.jpg",
             description: "short sleeves, high guality and 100% cotton",
             availablesizes: ["92", "98", "104", "104", "110"],
@@ -25,11 +26,12 @@ const data = {
             category: "dresses",
             brand: "C&A",
             rating: "4.5",
-            numReviews: "10"
+            numReviews: "10",
+            countInStock: "15"
         },
         {
             _id: "dress3",
-            name: "HEMA baby clothing",
+            name: "HEMA children clothing",
             image: "/images/dress3.jpg",
             description: "short sleeves high quality and 100% cotton",
             availablesizes: ["92", "98", "104"],
@@ -39,6 +41,7 @@ const data = {
             brand: "HEMA",
             rating: "4.5",
             numReviews: "15",
+            countInStock: "20"
             
         },
         {
@@ -53,6 +56,7 @@ const data = {
             brand: "Mamaloes",
             rating: "4.0",
             numReviews: "17",
+            countInStock: "12"
         },
         {
             _id: "dress5",
@@ -66,6 +70,7 @@ const data = {
             brand: "Carter's",
             rating: "4.0",
             numReviews: "17",
+            countInStock: "11"
             
         },
         {
@@ -80,6 +85,7 @@ const data = {
             brand: "Cat & Jack",
             rating: "4.8",
             numReviews: "16",
+            countInStock: "20"
             
         },
         {
@@ -94,6 +100,7 @@ const data = {
             brand: "Burt's bees baby",
             rating: "4.0",
             numReviews: "10",
+            countInStock: "22"
            
         },
         {
@@ -108,6 +115,7 @@ const data = {
             brand: "Bees baby",
             rating: "4.5",
             numReviews: "18",
+            countInStock: "25"
             
         },
         {
@@ -122,6 +130,7 @@ const data = {
             brand: "Babydump baby",
             rating: "4.0",
             numReviews: "17",
+            countInStock: "10"
             
         },
         {
@@ -136,6 +145,7 @@ const data = {
             brand: "C&A",
             rating: "4.5",
             numReviews: "15",
+            countInStock: "8"
             
         },
         {
@@ -150,6 +160,7 @@ const data = {
             brand: "H&M",
             rating: "4.8",
             numReviews: "18",
+            countInStock: "0"
             
         }
     ]
