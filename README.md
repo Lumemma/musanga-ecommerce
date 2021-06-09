@@ -42,3 +42,18 @@
    5. Create ProductScreen.js
    6. Add new Route from product details to App.js
    7. Create 3 columns for product image, info and action
+7. Create Node.JS Server
+   1. run npm init in musanga.com folder
+   3. Add .js to imports
+   4. npm install express
+   5. create server.js
+   6. add start command as node backend/server.js
+   7. Update package.json set type: module
+   8. require express
+   9. create route for / return backend is ready.
+   10. move products.js from frontend to backend
+   11. create route for /api/products
+   12. istall jason viewer in chrome webstore to view your data better
+   13. return products
+   14. npm install --save-dev nodemon and update in package.json
+   14. run npm start
