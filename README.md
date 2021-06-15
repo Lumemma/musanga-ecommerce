@@ -57,3 +57,14 @@
    13. return products
    14. npm install --save-dev nodemon and update in package.json
    14. run npm start
+8. Loading products from the backend
+   1. edit HomeScreen.js
+   2. define products, loading and error.
+   3. create useEffect
+   4. define async fetchData and call it
+   5. install axios
+   6. get data from /api/products
+   7. show them in the list
+   8. create Loading Component
+   9. create Message Box Component
+   10. use them in HomeScreen
