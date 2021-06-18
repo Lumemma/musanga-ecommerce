@@ -86,3 +86,6 @@
      2. add reducer to store.js
      3. use action in ProductScreen.js
      4. add /api/product/:id to backend api
+11. addToCart Button
+    1. Handle addToCart in ProductScreen.js
+    2. create CartScreen.js
