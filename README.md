@@ -89,3 +89,8 @@
 11. addToCart Button
     1. Handle addToCart in ProductScreen.js
     2. create CartScreen.js
+12. Implement addToCart Redux
+    1. create addToCart types, actions and reducers
+    2. add reducer to store.js
+    3. use action in Cartscreen.js
+    4. render cartItems.length
