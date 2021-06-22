@@ -1,4 +1,4 @@
-import { ADD_CART_ITEM } from "../types/cartTypes";
+import { ADD_CART_ITEM, REMOVE_CART_ITEM } from "../types/cartTypes";
 
 
 export const cartReducer = (state = { cartItems: [] }, action) => {
@@ -16,7 +16,16 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
       } else {
         return { ...state, cartItems: [...state.cartItems, item] };
       }
+
+      case REMOVE_CART_ITEM:
+      return {
+        ...state,
+        cartItems: state.cartItems.filter((x) => x.product !== action.payload),
+      };
     default:
       return state;
   }
+
+  
 };
+
