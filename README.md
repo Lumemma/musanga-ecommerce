@@ -104,3 +104,15 @@
     1. create removeFromCart types, actions and reducers
     2. add reducer to store.js
     3. use action in CartScreen.js
+15. Create Sample Users In MongoDB
+    1. npm install mongoose
+    2. connect to mongodb
+    3. create config.js
+    4. npm install dotenv
+    5. export MONGODB_URL
+    6. create models/userModel.js
+    7. create userSchema and userModel
+    8. create userRouter
+    9. Seed sample data
+    10. connect to database in server.js
+    11. download mongodb compass to view user data in the database
