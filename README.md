@@ -116,3 +116,11 @@
     9. Seed sample data
     10. connect to database in server.js
     11. download mongodb compass to view user data in the database
+16. Create Sample Products In MongoDB
+    1. create models/productModel.js
+    2. create productSchema and productModel
+    3. create productRouter
+    4. Seed sample data
+    5. Edit data.js file by removing all productId because database automatically creates new Id
+    6. In sever.js create general api for products, productList and productDetails.
+    7. view data with newly created ids in mongoDB compass database
