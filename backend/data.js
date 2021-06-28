@@ -19,7 +19,6 @@ const data = {
 
     products: [
         {
-            _id: "dress1",
             name: "H&M baby clothing",
             image: "/images/dress1.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -34,7 +33,6 @@ const data = {
 
         },
         {
-            _id: "dress2",
             name: "C&A children cothing",
             image: "/images/dress2.jpg",
             description: "short sleeves, high guality and 100% cotton",
@@ -48,7 +46,6 @@ const data = {
             countInStock: "15"
         },
         {
-            _id: "dress3",
             name: "HEMA children clothing",
             image: "/images/dress3.jpg",
             description: "short sleeves high quality and 100% cotton",
@@ -63,7 +60,6 @@ const data = {
             
         },
         {
-            _id: "dress4",
             name: "Mamaloes baby clothing",
             image: "/images/dress4.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -77,7 +73,6 @@ const data = {
             countInStock: "12"
         },
         {
-            _id: "dress5",
             name: "Carter's baby clothing",
             image: "/images/dress5.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -92,7 +87,6 @@ const data = {
             
         },
         {
-            _id: "dress6",
             name: "Cat & Jack baby clothing",
             image: "/images/dress6.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -107,7 +101,6 @@ const data = {
             
         },
         {
-            _id: "dress7",
             name: "Burt's bees baby short clothing",
             image: "/images/dress7.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -122,7 +115,6 @@ const data = {
            
         },
         {
-            _id: "dress8",
             name: "Bees baby long dress",
             image: "/images/dress8.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -137,7 +129,6 @@ const data = {
             
         },
         {
-            _id: "dress9",
             name: "Babydump short dress",
             image: "/images/dress9.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -152,7 +143,6 @@ const data = {
             
         },
         {
-            _id: "dress10",
             name: "C&A baby short dress",
             image: "/images/dress10.jpg",
             description: "short sleeves, high quality and 100% cotton",
@@ -167,7 +157,6 @@ const data = {
             
         },
         {
-            _id: "dress11",
             name: "H&M baby long dress",
             image: "/images/dress11.jpg",
             description: "long sleeves, high quality and 100% cotton",
