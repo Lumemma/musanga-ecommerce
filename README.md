@@ -124,3 +124,13 @@
     5. Edit data.js file by removing all productId because database automatically creates new Id
     6. In sever.js create general api for products, productList and productDetails.
     7. view data with newly created ids in mongoDB compass database
+17. Implement SignIn Backend
+    1. create /signIn api in userRouter
+    2. check email and password
+    3. generate token
+    4. install json web token to use in userRouter
+    5. create utils.js in backend folder to define utility function like generate token
+    6. create .env file in root folder and npm install dotenv
+    7. return token and data
+    8. test it using postman   
+    9. add .env file to the gitignore file
