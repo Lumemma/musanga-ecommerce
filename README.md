@@ -134,3 +134,8 @@
     7. return token and data
     8. test it using postman   
     9. add .env file to the gitignore file
+18.  Design/create SignIn Screen
+    1. create SigninScreen
+    2. render email and password fields
+    3. create signin types, actions and reducers
+    4. Update Header based on user login
