@@ -137,5 +137,10 @@
 18.  Design/create SignIn Screen
     1. create SigninScreen
     2. render email and password fields
-    3. create signin types, actions and reducers
+    3. In app.js and style in index.css
     4. Update Header based on user login
+19. Implement SignIn  in signInscreen (Frontend)
+    1. create signin types, actions and reducers
+    2. add reducer to store.js
+    3. use action in SignInscreen.js
+    4. style in index.css file
