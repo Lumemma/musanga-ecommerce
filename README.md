@@ -144,3 +144,13 @@
     2. add reducer to store.js
     3. use action in SignInscreen.js
     4. style in index.css file
+20. Create registerScreen
+    1. create API for /api/users/register in userRouter.js in backend folder
+    2. insert new user to database
+    3. return user info and token
+    4. create RegisterScreen in frontend folder
+    5. Add fields
+    6. Style fields
+    7. Add Registerscreen to App.js
+    8. create register action and reducer and add registerReducer to store.js
+    9. check validation and create user

@@ -6,6 +6,7 @@ import Cartscreen from "./Screens/Cartscreen";
 import { useDispatch, useSelector } from "react-redux";
 import SignInscreen from "./Screens/SignInscreen";
 import { signOut } from "./actions/userActions";
+import Registerscreen from "./Screens/Registerscreen";
 
 
 
@@ -59,6 +60,7 @@ function App() {
           <Route path="/cart/:id?" component={Cartscreen}></Route>
           <Route path="/product/:id" component={Productscreen}></Route>
           <Route path="/signin" component={SignInscreen}></Route>
+          <Route path="/register" component={Registerscreen}></Route>
           <Route path="/" component={Homescreen} exact></Route>
         </main>
         <footer className="row center">All rights reserved</footer>
