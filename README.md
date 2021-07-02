@@ -154,3 +154,9 @@
     7. Add Registerscreen to App.js
     8. create register action and reducer and add registerReducer to store.js
     9. check validation and create user
+21. Create shippingScreen
+    1. create checkoutSteps.js component
+    2. style chekoutSteps in index.css
+    3. create shipping fields and add Shippingscreen.js to app.js
+    4. implement shipping types, actions and reducers.
+    5. Add shipping from reducer in Cart local storage in store.js
