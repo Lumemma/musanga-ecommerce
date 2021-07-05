@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Link, Route} from "react-router-dom"
+import {BrowserRouter, Link, Route, Switch} from "react-router-dom"
 import Homescreen from "./Screens/Homescreen";
 import Productscreen from "./Screens/Productscreen";
 import Cartscreen from "./Screens/Cartscreen";
@@ -9,6 +9,7 @@ import { signOut } from "./actions/userActions";
 import Registerscreen from "./Screens/Registerscreen";
 import Shippingscreen from "./Screens/Shippingscreen";
 import Paymentscreen from "./Screens/Paymentscreen";
+import PlaceOrderscreen from "./Screens/PlaceOrderscreen";
 
 
 
@@ -59,13 +60,16 @@ function App() {
         </div>
         </header>
         <main>
-          <Route path="/cart/:id?" component={Cartscreen}></Route>
-          <Route path="/product/:id" component={Productscreen}></Route>
-          <Route path="/signin" component={SignInscreen}></Route>
-          <Route path="/register" component={Registerscreen}></Route>
-          <Route path="/shipping" component={Shippingscreen}></Route>
-          <Route patth="/payment" component={Paymentscreen}></Route>
+        <Switch>
+          <Route path="/cart/:id?" component={Cartscreen}exact></Route>
+          <Route path="/product/:id" component={Productscreen}exact></Route>
+          <Route path="/signin" component={SignInscreen}exact></Route>
+          <Route path="/register" component={Registerscreen}exact></Route>
+          <Route path="/shipping" component={Shippingscreen}exact></Route>
+          <Route path="/payment" component={Paymentscreen}exact></Route>
+          <Route path="/placeorder" component={PlaceOrderscreen}exact></Route>
           <Route path="/" component={Homescreen} exact></Route>
+          </Switch>
         </main>
         <footer className="row center">All rights reserved</footer>
       </div>

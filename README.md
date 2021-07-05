@@ -164,3 +164,6 @@
     1. create payment fields
     2. implement shipping type, actions and reducers
     3. Add  localStorage.removeItem('shippingAddress'), in userActions file
+23. Create placeOrder Screen
+    1. design order summary fields including calculations
+    2. Add placeOrderscreen.js to app.js and view the formating
