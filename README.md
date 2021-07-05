@@ -167,3 +167,10 @@
 23. Create placeOrder Screen
     1. design order summary fields including calculations
     2. Add placeOrderscreen.js to app.js and view the formating
+24.  Create placeOrder API in backend folder
+    1. create Order api
+    2. create orderModel
+    3. create orderRouter
+    4. create a post orderRouter in orderRouter.js and isAUTh in utils.js and import isAuth in orderRouter.js
+    5. And finally import orderRouter in store.js
+
