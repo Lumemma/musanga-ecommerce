@@ -160,3 +160,7 @@
     3. create shipping fields and add Shippingscreen.js to app.js
     4. implement shipping types, actions and reducers.
     5. Add shipping from reducer in Cart local storage in store.js
+22.  Create Payment Screen
+    1. create payment fields
+    2. implement shipping type, actions and reducers
+    3. Add  localStorage.removeItem('shippingAddress'), in userActions file
