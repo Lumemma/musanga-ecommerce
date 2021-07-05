@@ -18,7 +18,7 @@ orderRouter.post(
         paymentMethod: req.body.paymentMethod,
         itemsPrice: req.body.itemsPrice,
         shippingPrice: req.body.shippingPrice,
-        vatPrice: req.body.taxPrice,
+        vatPrice: req.body.vatPrice,
         totalPrice: req.body.totalPrice,
         user: req.user._id,
       });
