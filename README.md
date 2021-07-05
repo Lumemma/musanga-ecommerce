@@ -173,4 +173,8 @@
     3. create orderRouter
     4. create a post orderRouter in orderRouter.js and isAUTh in utils.js and import isAuth in orderRouter.js
     5. And finally import orderRouter in store.js
+25.  Implement placeOrder Function
+    1. handle placeOrder button click
+    2. create placeOrder types, action and reducer
+    3. Add type in cartType and cartReducer to implement EMPTY_CART 
 
