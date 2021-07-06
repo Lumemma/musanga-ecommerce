@@ -10,6 +10,7 @@ import Registerscreen from "./Screens/Registerscreen";
 import Shippingscreen from "./Screens/Shippingscreen";
 import Paymentscreen from "./Screens/Paymentscreen";
 import PlaceOrderscreen from "./Screens/PlaceOrderscreen";
+import Orderscreen from "./Screens/Orderscreen";
 
 
 
@@ -68,6 +69,7 @@ function App() {
           <Route path="/shipping" component={Shippingscreen}exact></Route>
           <Route path="/payment" component={Paymentscreen}exact></Route>
           <Route path="/placeorder" component={PlaceOrderscreen}exact></Route>
+          <Route path="/order/:id" component={Orderscreen}exact></Route>
           <Route path="/" component={Homescreen} exact></Route>
           </Switch>
         </main>
