@@ -177,4 +177,11 @@
     1. handle placeOrder button click
     2. create placeOrder types, action and reducer
     3. Add type in cartType and cartReducer to implement EMPTY_CART 
+26. Create and Implement orderScreen
+    1. build order api for /api/orders/:id in orderRouter
+    2. create OrderScreen.js
+    3. dispatch order details action in useEffect
+    4. load data with useSelector
+    5. show data like placeOrder screen
+    6. create orderDetails types, action and reducer, add reducer in store.
 
