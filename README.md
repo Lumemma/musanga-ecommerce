@@ -193,4 +193,10 @@
     6. add paypal checkout script in OrderScreen.js
     7. cd frontend in terminal npm install react-paypal-button-v2 
     8. show paypal button
+28. Implement Order Payment
+    1. update order after payment
+    2. create payOrder in api.js
+    3. create route for /:id/pay in orderRouter.js
+    4. rerender after pay order
+    5. create paymentResults in orderModel.js and orderRouter.js in backend folder
 
