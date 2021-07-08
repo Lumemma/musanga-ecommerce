@@ -71,7 +71,7 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderscreen}exact></Route>
           <Route path="/order/:id" component={Orderscreen}exact></Route>
           <Route path="/" component={Homescreen} exact></Route>
-          </Switch>
+        </Switch>
         </main>
         <footer className="row center">All rights reserved</footer>
       </div>

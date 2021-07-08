@@ -184,4 +184,13 @@
     4. load data with useSelector
     5. show data like placeOrder screen
     6. create orderDetails types, action and reducer, add reducer in store.
+27. Add Paypal Button
+    1. get client id from paypal
+    2. set it in .env file
+    3. First the sandbox clientId and secondly the live clientId
+    4. create route form /api/paypal/clientId
+    5. create getPaypalClientID in api.js
+    6. add paypal checkout script in OrderScreen.js
+    7. cd frontend in terminal npm install react-paypal-button-v2 
+    8. show paypal button
 
