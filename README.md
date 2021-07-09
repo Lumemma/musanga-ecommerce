@@ -199,4 +199,13 @@
     3. create route for /:id/pay in orderRouter.js
     4. rerender after pay order
     5. create paymentResults in orderModel.js and orderRouter.js in backend folder
+29. Display Order History
+    1. Create OrderHistoryScreen
+    2. create types, actions, reducer and import reducer in store.js
+    3. create customer orders api
+    4. use state to bring reducer and dispatch action to orderhistoryscreen.
+    5. create api for getMyOrders
+    6. show orders in orderHistory screen
+    7. style orders in a table and include path "/mine" in oderRouter.
+ 
 
