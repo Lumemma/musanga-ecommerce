@@ -12,6 +12,7 @@ import Paymentscreen from "./Screens/Paymentscreen";
 import PlaceOrderscreen from "./Screens/PlaceOrderscreen";
 import Orderscreen from "./Screens/Orderscreen";
 import OrderHistoryscreen from "./Screens/OrderHistoryscreen";
+import Profilescreen from "./Screens/Profilescreen";
 
 
 
@@ -51,6 +52,10 @@ function App() {
                 <ul className="dropdown-content">
 
                 <li>
+                    <Link to="/profile">User Profile</Link>
+                  </li>
+
+                <li>
                     <Link to="/orderhistory">Order History</Link>
                   </li>
 
@@ -76,7 +81,8 @@ function App() {
           <Route path="/payment" component={Paymentscreen}exact></Route>
           <Route path="/placeorder" component={PlaceOrderscreen}exact></Route>
           <Route path="/order/:id" component={Orderscreen}exact></Route>
-          <Route path="/orderhistory" component={OrderHistoryscreen}></Route>
+          <Route path="/orderhistory" component={OrderHistoryscreen}exact></Route>
+          <Route path="/profile" component={Profilescreen}exact></Route>
           <Route path="/" component={Homescreen} exact></Route>
         </Switch>
         </main>

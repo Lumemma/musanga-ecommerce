@@ -207,5 +207,10 @@
     5. create api for getMyOrders
     6. show orders in orderHistory screen
     7. style orders in a table and include path "/mine" in oderRouter.
+30. Display User Profile
+    1. create user details api in userProfilescreen
+    2. create types, actions and reducer. reducer in store.js
+    3. use state to bring reducer and dispatch action to userProfile.
+    4. show user information
  
 
