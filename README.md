@@ -212,5 +212,9 @@
     2. create types, actions and reducer. reducer in store.js
     3. use state to bring reducer and dispatch action to userProfile.
     4. show user information
+31. Update userProfile
+    1. create user update api
+    2. update user info
+
  
 
