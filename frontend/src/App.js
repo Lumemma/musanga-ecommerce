@@ -13,6 +13,7 @@ import PlaceOrderscreen from "./Screens/PlaceOrderscreen";
 import Orderscreen from "./Screens/Orderscreen";
 import OrderHistoryscreen from "./Screens/OrderHistoryscreen";
 import Profilescreen from "./Screens/Profilescreen";
+import privateRoute from "./components/privateRoute";
 
 
 
@@ -82,7 +83,7 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderscreen}exact></Route>
           <Route path="/order/:id" component={Orderscreen}exact></Route>
           <Route path="/orderhistory" component={OrderHistoryscreen}exact></Route>
-          <Route path="/profile" component={Profilescreen}exact></Route>
+          <privateRoute path="/profile" component={Profilescreen}></privateRoute>
           <Route path="/" component={Homescreen} exact></Route>
         </Switch>
         </main>
