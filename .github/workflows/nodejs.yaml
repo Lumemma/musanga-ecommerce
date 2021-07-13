@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build the project 
-        run: npm run build
+        run: npm build
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
         env:
