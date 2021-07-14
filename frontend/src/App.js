@@ -13,7 +13,9 @@ import PlaceOrderscreen from "./Screens/PlaceOrderscreen";
 import Orderscreen from "./Screens/Orderscreen";
 import OrderHistoryscreen from "./Screens/OrderHistoryscreen";
 import Profilescreen from "./Screens/Profilescreen";
-import privateRoute from "./components/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute";
+import AdminRoute from "./components/AdminView";
+import ProductListscreen from "./Screens/ProductListscreen";
 
 
 
@@ -99,14 +101,15 @@ function App() {
         <Switch>
           <Route path="/cart/:id?" component={Cartscreen}exact></Route>
           <Route path="/product/:id" component={Productscreen}exact></Route>
-          <Route path="/signin" component={SignInscreen}exact></Route>
-          <Route path="/register" component={Registerscreen}exact></Route>
-          <Route path="/shipping" component={Shippingscreen}exact></Route>
+          <Route path="/signin" component={SignInscreen}></Route>
+          <Route path="/register" component={Registerscreen}></Route>
+          <Route path="/shipping" component={Shippingscreen}></Route>
           <Route path="/payment" component={Paymentscreen}exact></Route>
-          <Route path="/placeorder" component={PlaceOrderscreen}exact></Route>
+          <Route path="/placeorder" component={PlaceOrderscreen}></Route>
           <Route path="/order/:id" component={Orderscreen}exact></Route>
-          <Route path="/orderhistory" component={OrderHistoryscreen}exact></Route>
-          <privateRoute path="/profile" component={Profilescreen}></privateRoute>
+          <Route path="/orderhistory" component={OrderHistoryscreen}></Route>
+          <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
+          <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
           <Route path="/" component={Homescreen} exact></Route>
         </Switch>
         </main>
