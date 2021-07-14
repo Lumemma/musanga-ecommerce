@@ -227,6 +227,11 @@
     2. build Create Product button
     3. define product create types, action and reducer and reducer in store.js
     4. use action in Product List Screen
+35. Create product edit screen
+    1. define state
+    2. create fields
+    3. load product details
+    4. add to routes
 
  
 
