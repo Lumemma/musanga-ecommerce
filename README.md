@@ -222,6 +222,11 @@
 33. List Products
     1. Create Product List Screen
     2. show products on the List screen
+34. Create Product
+    1. build create product api
+    2. build Create Product button
+    3. define product create types, action and reducer and reducer in store.js
+    4. use action in Product List Screen
 
  
 
