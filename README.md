@@ -219,6 +219,9 @@
     1. Create Admin Menu
     2. Create Admin Middleware in Backend
     3. Create Admin Route in Frontend
+33. List Products
+    1. Create Product List Screen
+    2. show products on the List screen
 
  
 
