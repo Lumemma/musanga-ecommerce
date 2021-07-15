@@ -236,6 +236,11 @@
     1. define update api
     2. define product update types, action and reducer
     3. use action in Product Edit Screen
+37.Upload Product Image
+    1. npm install multer to manage uploadRouter
+    2. define uploadRouter in backend folder
+    3. create uploads folder and file.txt in it in thr root folder musanga.com
+    4. Handle frontend
 
  
 
