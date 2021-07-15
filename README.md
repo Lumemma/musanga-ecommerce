@@ -232,6 +232,10 @@
     2. create fields
     3. load product details
     4. add to routes
+36. Update Product
+    1. define update api
+    2. define product update types, action and reducer
+    3. use action in Product Edit Screen
 
  
 
