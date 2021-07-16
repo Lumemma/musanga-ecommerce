@@ -245,6 +245,12 @@
     1.  create delete api in backend in the productRouter.js
     2.  create delete types, action and reducer and reducer in store.js
     3.  use action in productList screen
+39. List Orders
+    1. create order list api in orderRouter in backend
+    2. create Order List Screen
+    3. create delete types, action and reducer
+    4. Add reducer to store
+    5. show products on the screen
 
  
 
