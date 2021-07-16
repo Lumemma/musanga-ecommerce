@@ -17,6 +17,8 @@ import PrivateRoute from "./components/PrivateRoute";
 import AdminRoute from "./components/AdminView";
 import ProductListscreen from "./Screens/ProductListscreen";
 import ProductEditScreen from "./Screens/ProductEditscreen";
+import OrderListscreen from "./Screens/OrderListscreen";
+
 
 
 
@@ -112,6 +114,7 @@ function App() {
           <Route path="/orderhistory" component={OrderHistoryscreen}></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
+          <AdminRoute path="/orderlist" component={OrderListscreen}></AdminRoute> 
           <Route path="/" component={Homescreen} exact></Route>
         </Switch>
         </main>
