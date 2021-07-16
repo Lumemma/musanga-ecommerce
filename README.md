@@ -251,6 +251,9 @@
     3. create delete types, action and reducer
     4. Add reducer to store
     5. show products on the screen
+40. Delete Order
+    1. create delete order action and reducer
+    2. add order delete action to order list
 
  
 
