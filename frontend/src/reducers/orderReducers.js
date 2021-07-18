@@ -1,5 +1,5 @@
 
-import { CREATE_ORDER_FAIL, CREATE_ORDER_REQUEST, CREATE_ORDER_RESET, CREATE_ORDER_SUCCESS, DELETE_ORDER_FAIL, DELETE_ORDER_REQUEST, DELETE_ORDER_RESET, DELETE_ORDER_SUCCESS, DETAILS_ORDER_FAIL, DETAILS_ORDER_REQUEST, DETAILS_ORDER_SUCCESS, LIST_ORDER_FAIL, LIST_ORDER_REQUEST, LIST_ORDER_SUCCESS, ORDER_MINE_LIST_FAIL, ORDER_MINE_LIST_REQUEST, ORDER_MINE_LIST_SUCCESS, PAY_ORDER_FAIL, PAY_ORDER_REQUEST, PAY_ORDER_RESET, PAY_ORDER_SUCCESS,  } from '../types/orderTypes';
+import { CREATE_ORDER_FAIL, CREATE_ORDER_REQUEST, CREATE_ORDER_RESET, CREATE_ORDER_SUCCESS, DELETE_ORDER_FAIL, DELETE_ORDER_REQUEST, DELETE_ORDER_RESET, DELETE_ORDER_SUCCESS, DELIVER_ORDER_FAIL, DELIVER_ORDER_REQUEST, DELIVER_ORDER_RESET, DELIVER_ORDER_SUCCESS, DETAILS_ORDER_FAIL, DETAILS_ORDER_REQUEST, DETAILS_ORDER_SUCCESS, LIST_ORDER_FAIL, LIST_ORDER_REQUEST, LIST_ORDER_SUCCESS, ORDER_MINE_LIST_FAIL, ORDER_MINE_LIST_REQUEST, ORDER_MINE_LIST_SUCCESS, PAY_ORDER_FAIL, PAY_ORDER_REQUEST, PAY_ORDER_RESET, PAY_ORDER_SUCCESS,  } from '../types/orderTypes';
 
 export const orderCreateReducer = (state = {}, action) => {
     switch (action.type) {
@@ -79,6 +79,21 @@ export const orderCreateReducer = (state = {}, action) => {
       case DELETE_ORDER_FAIL:
         return { loading: false, error: action.payload };
       case DELETE_ORDER_RESET:
+        return {};
+      default:
+        return state;
+    }
+  };
+
+  export const orderDeliverReducer = (state = {}, action) => {
+    switch (action.type) {
+      case DELIVER_ORDER_REQUEST:
+        return { loading: true };
+      case DELIVER_ORDER_SUCCESS:
+        return { loading: false, success: true };
+      case DELIVER_ORDER_FAIL:
+        return { loading: false, error: action.payload };
+      case DELIVER_ORDER_RESET:
         return {};
       default:
         return state;

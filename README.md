@@ -254,6 +254,8 @@
 40. Delete Order
     1. create delete order action and reducer
     2. add order delete action to order list
-
+41. Deliver Order
+    1. create types, actions and reducers for deliver order
+    2. add order deliver action to order details screeen
  
 
