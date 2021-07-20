@@ -257,7 +257,7 @@
 41. Deliver Order
     1. create types, actions and reducers for deliver order
     2. add order deliver action to order details screeen
-Publish To Heroku
+42. Publish To Heroku
     1. Create git repository
     2. Create heroku account
     3. install Heroku CLI

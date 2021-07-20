@@ -19,7 +19,9 @@ mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/musanga", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
-});
+})
+.then(() => console.log("Database connected!"))
+  .catch(err => console.log(err));
 
 app.use("/api/uploads", uploadRouter);
 app.use('/api/users', userRouter);
@@ -39,8 +41,6 @@ app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
 );
-
-
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
