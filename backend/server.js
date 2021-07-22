@@ -19,7 +19,9 @@ mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/musanga", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
-});
+})
+.then(() => console.log("Database connected!"))
+  .catch(err => console.log(err));
 
 app.use("/api/uploads", uploadRouter);
 app.use('/api/users', userRouter);
