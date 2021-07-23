@@ -272,5 +272,9 @@
     1. build api for list users in userRouter in backend
     2. Create UserList Screen
     3. create order details type, action and reducer
+44. Delete Users
+    1. build api for delete users in userRouter
+    2. create order details types, action and reducer
+    3. Use action in UserListScreen
  
 
