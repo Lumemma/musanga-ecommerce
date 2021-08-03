@@ -276,5 +276,9 @@
     1. build api for delete users in userRouter
     2. create order details types, action and reducer
     3. Use action in UserListScreen
+45. Edit Users
+    1. build api for update users 
+    2. create edit user screen UI
+    3. dispatch type: USER_DETAIL_RESET in UserList screen
  
 
