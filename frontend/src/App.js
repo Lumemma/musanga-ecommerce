@@ -19,6 +19,7 @@ import ProductListscreen from "./Screens/ProductListscreen";
 import ProductEditScreen from "./Screens/ProductEditscreen";
 import OrderListscreen from "./Screens/OrderListscreen";
 import UserListscreen from "./Screens/UserListscreen";
+import UserEditscreen from "./Screens/UserEditscreen";
 
 
 
@@ -117,6 +118,7 @@ function App() {
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListscreen}></AdminRoute>
           <AdminRoute path="/userlist" component={UserListscreen}></AdminRoute> 
+          <AdminRoute path="/user/:id/edit" component={UserEditscreen}></AdminRoute>
           <Route path="/" component={Homescreen} exact></Route>
         </Switch>
         </main>
