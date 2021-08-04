@@ -20,6 +20,7 @@ import ProductEditScreen from "./Screens/ProductEditscreen";
 import OrderListscreen from "./Screens/OrderListscreen";
 import UserListscreen from "./Screens/UserListscreen";
 import UserEditscreen from "./Screens/UserEditscreen";
+import SellerRoute from "./components/SellerRoute";
 
 
 
@@ -78,7 +79,23 @@ function App() {
               <Link to="/signin">Sign In</Link>
             )}
 
-{userInfo && userInfo.isAdmin && (
+           {userInfo && userInfo.isSeller && (
+              <div className="dropdown">
+                <Link to="#admin">
+                  Seller <i className="fa fa-caret-down"></i>
+                </Link>
+                <ul className="dropdown-content">
+                  <li>
+                    <Link to="/productlist/seller">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/orderlist/seller">Orders</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
+
+            {userInfo && userInfo.isAdmin && (
               <div className="dropdown">
                 <Link to="#admin">
                   Admin <i className="fa fa-caret-down"></i>
@@ -116,9 +133,11 @@ function App() {
           <Route path="/orderhistory" component={OrderHistoryscreen}></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
-          <AdminRoute path="/orderlist" component={OrderListscreen}></AdminRoute>
+          <AdminRoute path="/orderlist" component={OrderListscreen}exact></AdminRoute>
           <AdminRoute path="/userlist" component={UserListscreen}></AdminRoute> 
           <AdminRoute path="/user/:id/edit" component={UserEditscreen}></AdminRoute>
+          <SellerRoute path="/productlist/seller" component={ProductListscreen}></SellerRoute>
+          <SellerRoute path="/orderlist/seller" component={OrderListscreen}></SellerRoute>
           <Route path="/" component={Homescreen} exact></Route>
         </Switch>
         </main>
