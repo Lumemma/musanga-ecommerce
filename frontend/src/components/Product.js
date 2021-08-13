@@ -2,7 +2,6 @@ import React from 'react';
 import Rating from './Rating';
 import { Link } from "react-router-dom"
 
-
 export default function Product(props) {
   const { product } = props;
   return (
