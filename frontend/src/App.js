@@ -38,7 +38,6 @@ function App() {
     dispatch(signOut());
   };
 
-
   return (
     <BrowserRouter>
     <div className="grid-container">
