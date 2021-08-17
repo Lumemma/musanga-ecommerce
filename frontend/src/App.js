@@ -22,6 +22,8 @@ import UserListscreen from "./Screens/UserListscreen";
 import UserEditscreen from "./Screens/UserEditscreen";
 import SellerRoute from "./components/SellerRoute";
 import Sellerscreen from "./Screens/Sellerscreen";
+import SearchBox from "./components/SearchBox";
+import Searchscreen from "./Screens/Searchscreen";
 
 
 
@@ -47,6 +49,15 @@ function App() {
              musanga
             </Link>
           </div>
+
+          <div>
+            <Route
+              render={({ history }) => (
+                <SearchBox history={history}></SearchBox>
+              )}
+            ></Route>
+          </div>
+
           <div>
             <Link to="/cart">Cart 
             {cartItems.length > 0 && (
@@ -132,6 +143,7 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderscreen}></Route>
           <Route path="/order/:id" component={Orderscreen}></Route>
           <Route path="/orderhistory" component={OrderHistoryscreen}></Route>
+          <Route path="/search/name/:name?" component={Searchscreen}></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListscreen}exact></AdminRoute>
