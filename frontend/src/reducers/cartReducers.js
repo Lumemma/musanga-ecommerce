@@ -1,4 +1,4 @@
-import { ADD_CART_ITEM, EMPTY_CART, REMOVE_CART_ITEM, SAVE_CART_PAYMENT, SAVE_CART_SHIPPING } from "../types/cartTypes";
+import { ADD_CART_ITEM, ADD_CART_ITEM_FAIL, EMPTY_CART, REMOVE_CART_ITEM, SAVE_CART_PAYMENT, SAVE_CART_SHIPPING } from "../types/cartTypes";
 
 
 export const cartReducer = (state = { cartItems: [] }, action) => {
@@ -14,12 +14,12 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
           ),
         };
       } else {
-        return { ...state, cartItems: [...state.cartItems, item] };
+        return { ...state, error: '', cartItems: [...state.cartItems, item] };
       }
 
       case REMOVE_CART_ITEM:
       return {
-        ...state,
+        ...state,  error: '',
         cartItems: state.cartItems.filter((x) => x.product !== action.payload),
       };
 
@@ -29,8 +29,11 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
       case SAVE_CART_PAYMENT:
       return { ...state, paymentMethod: action.payload };
 
+      case ADD_CART_ITEM_FAIL:
+      return { ...state, error: action.payload };
+
       case EMPTY_CART:
-      return { ...state, cartItems: [] };
+      return { ...state, error: '', cartItems: [] };
 
     default:
       return state;
