@@ -290,6 +290,10 @@
     1. create seller page
     2. update product component and product screen
     3. update product routes
+48. Top Seller Carousel
+    1. install react carousel in frontend folder
+    2. implement types, actions and reducers for top sellers
+    3. use react carousel with data in Homescreen.js
 
  
 
