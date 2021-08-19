@@ -322,9 +322,10 @@ img.large {
   border-right: none;
   margin-left: 0.5rem;
 }
-.search {
-  max-width: 50rem
+.active {
+  font-weight: bold;
 }
+
 
 
 

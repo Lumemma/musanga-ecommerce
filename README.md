@@ -307,6 +307,10 @@
      2.  filter by category
      3.  define types, sctions and reducer
      4.  add reducer in store.js and searchsreen. dispatch action in searchscreen.js
+52. More advanced search filter/sort
+     1.  filter by price
+     2.  filter by rating
+     3.  sort by price, rating and color
 
 
 
