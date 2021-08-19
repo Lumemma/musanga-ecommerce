@@ -302,6 +302,14 @@
     3. handle submit form
     4. edit parse url to get query string
     5. update product list api for search by name
+51. Add Advanced Search Filter
+     1.  add side bar
+     2.  filter by category
+     3.  define types, sctions and reducer
+     4.  add reducer in store.js and searchsreen. dispatch action in searchscreen.js
+
+
+
 
 
  

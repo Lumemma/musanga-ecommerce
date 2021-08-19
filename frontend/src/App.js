@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {BrowserRouter, Link, Route, Switch} from "react-router-dom"
 import Homescreen from "./Screens/Homescreen";
 import Productscreen from "./Screens/Productscreen";
@@ -24,14 +24,16 @@ import SellerRoute from "./components/SellerRoute";
 import Sellerscreen from "./Screens/Sellerscreen";
 import SearchBox from "./components/SearchBox";
 import Searchscreen from "./Screens/Searchscreen";
-
-
-
+import { listProductCategories } from "./actions/productActions";
+import LoadingBox from './components/LoadingBox';
+import MessageBox from './components/MessageBox';
 
 
 function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
 
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
@@ -40,11 +42,31 @@ function App() {
     dispatch(signOut());
   };
 
+  const productCategoryList = useSelector((state) => state.productCategoryList);
+  const {
+    loading: loadingCategories,
+    error: errorCategories,
+    categories,
+  } = productCategoryList;
+
+  useEffect(() => {
+    dispatch(listProductCategories());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
     <div className="grid-container">
         <header className="row">
           <div>
+
+          <button
+              type="button"
+              className="open-sidebar"
+              onClick={() => setSidebarIsOpen(true)}
+            >
+              <i className="fa fa-bars"></i>
+            </button>
+
             <Link className="brand" to="/">
              musanga
             </Link>
@@ -130,6 +152,38 @@ function App() {
 
         </div>
         </header>
+
+        <aside className={sidebarIsOpen ? 'open' : ''}>
+          <ul className="categories">
+            <li>
+              <strong>Categories</strong>
+              <button
+                onClick={() => setSidebarIsOpen(false)}
+                className="close-sidebar"
+                type="button"
+              >
+                <i className="fa fa-close"></i>
+              </button>
+            </li>
+            {loadingCategories ? (
+              <LoadingBox></LoadingBox>
+            ) : errorCategories ? (
+              <MessageBox variant="danger">{errorCategories}</MessageBox>
+            ) : (
+              categories.map((c) => (
+                <li key={c}>
+                  <Link
+                    to={`/search/category/${c}`}
+                    onClick={() => setSidebarIsOpen(false)}
+                  >
+                    {c}
+                  </Link>
+                </li>
+              ))
+            )}
+          </ul>
+        </aside>
+
         <main>
         <Switch>
         <Route path="/seller/:id" component={Sellerscreen}></Route>
@@ -144,6 +198,8 @@ function App() {
           <Route path="/order/:id" component={Orderscreen}></Route>
           <Route path="/orderhistory" component={OrderHistoryscreen}></Route>
           <Route path="/search/name/:name?" component={Searchscreen}></Route>
+          <Route path="/search/category/:category" component={Searchscreen}exact></Route>
+          <Route path="/search/category/:category/name/:name" component={Searchscreen}exact></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListscreen}exact></AdminRoute>
