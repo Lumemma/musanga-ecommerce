@@ -178,7 +178,7 @@ function App() {
                   >
                     {c}
                   </Link>
-                </li>
+                </li> 
               ))
             )}
           </ul>
@@ -200,6 +200,7 @@ function App() {
           <Route path="/search/name/:name?" component={Searchscreen}></Route>
           <Route path="/search/category/:category" component={Searchscreen}exact></Route>
           <Route path="/search/category/:category/name/:name" component={Searchscreen}exact></Route>
+          <Route path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order" component={Searchscreen}exact ></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListscreen}exact></AdminRoute>
