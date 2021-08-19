@@ -311,6 +311,7 @@
      1.  filter by price
      2.  filter by rating
      3.  sort by price, rating and color
+    
 
 
 
