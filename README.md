@@ -311,6 +311,14 @@
      1.  filter by price
      2.  filter by rating
      3.  sort by price, rating and color
+53. Review/Rate Products
+     1.  update Productscreen.js 
+     2.  rate products
+     3.  create types, actions and reducers and add reducer in store.js
+     4.  add createReview action and PRODUCT_REVIEW_CREATE_RESET type in Productscreen.js
+     5.  implement api in productRouter in backend folder
+     6.  add reviewSchema in productModel.js
+    
 
 
 
