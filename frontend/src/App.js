@@ -27,6 +27,7 @@ import Searchscreen from "./Screens/Searchscreen";
 import { listProductCategories } from "./actions/productActions";
 import LoadingBox from './components/LoadingBox';
 import MessageBox from './components/MessageBox';
+import Mapscreen from "./Screens/Mapscreen";
 
 
 function App() {
@@ -202,6 +203,7 @@ function App() {
           <Route path="/search/category/:category/name/:name" component={Searchscreen}exact></Route>
           <Route path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order" component={Searchscreen}exact ></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
+          <PrivateRoute path="/map" component={Mapscreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListscreen}exact></AdminRoute>
           <AdminRoute path="/userlist" component={UserListscreen}></AdminRoute> 

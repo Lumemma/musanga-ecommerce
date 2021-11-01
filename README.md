@@ -318,6 +318,16 @@
      4.  add createReview action and PRODUCT_REVIEW_CREATE_RESET type in Productscreen.js
      5.  implement api in productRouter in backend folder
      6.  add reviewSchema in productModel.js
+54. Choose Address On Google Map
+    1. create google map credentials
+    2. update .env file with Google Api Key
+    3. create api to send google api to frontend
+    4. create map screen
+    5. fetch google api
+    6. getUserLocation
+    7. install @react-google-maps/api
+    8. use it in shipping screen
+    9. apply map to the checkout screen
     
 
 
