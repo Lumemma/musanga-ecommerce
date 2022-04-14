@@ -328,6 +328,12 @@
     7. install @react-google-maps/api
     8. use it in shipping screen
     9. apply map to the checkout screen
+55. Debug bugs:running locally without issues
+    1. add seller info to data.js
+    2. seed product data with admin info as seller
+    3. fix isSeller and isAdmin on update user
+    4. remove auth from user details
+    
     
 
 
