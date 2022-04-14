@@ -79,8 +79,9 @@ export const userDetailsAction = (userId) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
+    //bug fix remove the auth and make userinfo optional
     const { data } = await Axios.get(`/api/users/${userId}`, {
-      headers: { Authorization: `Bearer ${userInfo.token}` },
+      headers: { Authorization: `Bearer ${userInfo?.token}` },
     });
     dispatch({ type: USER_DETAILS_SUCCESS, payload: data });
   } catch (error) {
