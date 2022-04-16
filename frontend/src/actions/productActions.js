@@ -24,12 +24,12 @@ import {
 } from "../types/productTypes";
 
 // action of productList for homeScreen
-export const listProducts = ({ seller = '', name = '', category = '', order = '', color = '', min = 0, max = 0, rating = 0,}) => async (dispatch) => {
+export const listProducts = ({ pageNumber = '', seller = '', name = '', category = '', order = '', color = '', min = 0, max = 0, rating = 0,}) => async (dispatch) => {
   dispatch({
     type: PRODUCT_LIST_REQUEST,
   });
   try {
-    const { data } = await Axios.get(`/api/products?seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}&color=${color}`);
+    const { data } = await Axios.get(`/api/products? pageNumber=${pageNumber}&seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}&color=${color}`);
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });

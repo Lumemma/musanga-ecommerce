@@ -201,10 +201,11 @@ function App() {
           <Route path="/search/name/:name?" component={Searchscreen}></Route>
           <Route path="/search/category/:category" component={Searchscreen}exact></Route>
           <Route path="/search/category/:category/name/:name" component={Searchscreen}exact></Route>
-          <Route path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order" component={Searchscreen}exact ></Route>
+          <Route path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order/pageNumber/:pageNumber" component={Searchscreen}exact ></Route>
           <PrivateRoute path="/profile" component={Profilescreen}></PrivateRoute>
           <PrivateRoute path="/map" component={Mapscreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListscreen}exact></AdminRoute>
+          <AdminRoute path="/productlist/pageNumber/:pageNumber" component={ProductListscreen}exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListscreen}exact></AdminRoute>
           <AdminRoute path="/userlist" component={UserListscreen}></AdminRoute> 
           <AdminRoute path="/user/:id/edit" component={UserEditscreen}></AdminRoute>
